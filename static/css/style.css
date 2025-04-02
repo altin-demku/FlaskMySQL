@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    color: #37474f;
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #607d8b;
+    outline: none;
+}
+
+input[type="submit"] {
+    background: #00796b;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #004d40;
+}
+
+table {
+    width: 85%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #00796b;
+    color: white;
+}
+
+td {
+    background: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    table {
+        width: 95%;
+    }
+}
